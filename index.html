@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stake Mirror List — Working Stake Mirrors (Updated)</title>
+    <meta name="description" content="Up-to-date list of working Stake mirrors. Fast access to the platform through verified mirror links. Link updates, safety tips, and FAQ.">
+    <meta name="keywords" content="stake mirror, working stake mirror, stake mirror list, updated stake mirror, stake access, stake mirror links, stake alternative domain, stake not opening, stake blocked">
+
+    <!-- Canonical (replace URL with your landing domain) -->
+    <link rel="canonical" href="https://working-stake.github.io/mirrors/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stake Mirror List — Working Stake Mirrors">
+    <meta property="og:description" content="Check the up-to-date list of working Stake mirrors and get quick access to the platform.">
+    <meta property="og:url" content="https://working-stake.github.io/mirrors/">
+    <meta property="og:image" content="https://working-stake.github.io/mirrors/preview-stake-mirrors.jpg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stake Mirror List — Working Stake Mirrors">
+    <meta name="twitter:description" content="Up-to-date Stake mirrors, safety tips, and quick access.">
+    <meta name="twitter:image" content="https://working-stake.github.io/mirrors/preview-stake-mirrors.jpg">
+    <meta name="twitter:site" content="@your_account">
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Stake Mirror List",
+      "url": "https://working-stake.github.io/mirrors/",
+      "description": "Up-to-date list of working Stake mirrors and safety tips for accessing the platform.",
+      "inLanguage": "en-US"
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Stake mirror?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Stake mirror is an alternative domain of the platform that lets you access the service if the main address is unavailable or blocked in your region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to use Stake mirrors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You should only use verified links that lead to the official service. Always check for HTTPS and avoid entering your data on suspicious websites."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if a mirror doesn’t open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Try another mirror from the list, clear your browser cache, or check your connection settings. Also make sure your actions comply with the laws of your country."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #050816;
+            --bg-card: rgba(15, 23, 42, 0.9);
+            --accent: #22c55e;
+            --accent-soft: rgba(34, 197, 94, 0.15);
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --border-subtle: rgba(148, 163, 184, 0.25);
+            --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.85);
+            --radius-xl: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            backdrop-filter: blur(18px);
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75), transparent);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+        }
+
+        .header-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 30% 30%, #22c55e, #16a34a, #111827);
+            box-shadow: 0 0 25px rgba(34, 197, 94, 0.6);
+        }
+
+        .logo-text-main {
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: 0.04em;
+        }
+
+        .logo-text-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #22c55e, #4ade80);
+            transition: width 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            display: none;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero */
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 42px;
+            align-items: center;
+            padding: 32px 20px 56px;
+        }
+
+        .hero-badge-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .hero-badge {
+            font-size: 0.78rem;
+            padding: 5px 12px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid var(--border-subtle);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+        }
+
+        .hero-badge span.dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 999px;
+            background: #22c55e;
+            box-shadow: 0 0 12px rgba(34, 197, 94, 0.7);
+        }
+
+        .hero-title {
+            font-size: clamp(2.1rem, 3vw, 2.6rem);
+            line-height: 1.1;
+            margin: 0 0 14px;
+            letter-spacing: 0.01em;
+        }
+
+        .hero-title span.accent {
+            background: linear-gradient(120deg, #bbf7d0, #22c55e, #4ade80);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            white-space: nowrap;
+        }
+
+        .hero-subtitle {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            max-width: 520px;
+            margin-bottom: 24px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 11px 22px;
+            border-radius: 999px;
+            background: radial-gradient(circle at 10% 0, #4ade80, #16a34a);
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.98rem;
+            color: #022c22;
+            box-shadow: 0 14px 30px rgba(22, 163, 74, 0.6);
+            transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: 0 18px 40px rgba(22, 163, 74, 0.75);
+            filter: brightness(1.03);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(15, 23, 42, 1);
+            border-color: rgba(148, 163, 184, 0.7);
+            color: var(--text-main);
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .hero-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(31, 41, 55, 0.9);
+        }
+
+        .hero-meta span strong {
+            color: #e5e7eb;
+            font-weight: 600;
+        }
+
+        .hero-visual {
+            position: relative;
+            padding: 20px;
+        }
+
+        .hero-orbit {
+            position: relative;
+            border-radius: 999px;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            background:
+                radial-gradient(circle at 18% 10%, rgba(34, 197, 94, 0.35), transparent 55%),
+                radial-gradient(circle at 80% 0%, rgba(129, 140, 248, 0.35), transparent 60%),
+                radial-gradient(circle at 50% 100%, rgba(15, 23, 42, 0.95), rgba(2, 6, 23, 1));
+            border: 1px solid rgba(148, 163, 184, 0.4);
+            box-shadow: var(--shadow-soft);
+            overflow: hidden;
+        }
+
+        .hero-orbit-inner {
+            position: absolute;
+            inset: 16px;
+            border-radius: 32px;
+            background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.7), rgba(2, 6, 23, 0.98));
+            border: 1px solid rgba(51, 65, 85, 0.9);
+            padding: 16px 16px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .visual-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .visual-title {
+            font-size: 0.86rem;
+            color: #e5e7eb;
+        }
+
+        .visual-pill {
+            font-size: 0.7rem;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(55, 65, 81, 0.9);
+            color: var(--text-muted);
+        }
+
+        .visual-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 10px;
+            margin-top: 6px;
+        }
+
+        .mirror-card-main {
+            border-radius: 16px;
+            padding: 10px 11px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(22, 163, 74, 0.08));
+            border: 1px solid rgba(34, 197, 94, 0.45);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mirror-card-main-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mirror-card-main-label span.dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: #22c55e;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+        }
+
+        .mirror-card-main-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #bbf7d0;
+            word-break: break-all;
+        }
+
+        .mirror-card-main-meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .mirror-card-tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .mirror-card-tag {
+            font-size: 0.68rem;
+            padding: 3px 7px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.96);
+            border: 1px solid rgba(55, 65, 81, 0.9);
+        }
+
+        .mirrors-mini {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mirror-mini-item {
+            border-radius: 12px;
+            padding: 8px 9px;
+            background: rgba(15, 23, 42, 0.96);
+            border: 1px solid rgba(31, 41, 55, 0.94);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .mirror-mini-status {
+            font-size: 0.7rem;
+            padding: 2px 7px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, 0.15);
+            color: #bbf7d0;
+        }
+
+        .visual-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 8px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .visual-foot-note {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .visual-foot-pill {
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px dashed rgba(148, 163, 184, 0.7);
+        }
+
+        /* Section base */
+        section {
+            margin-bottom: 44px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 32px;
+        }
+
+        .section-header {
+            margin-bottom: 18px;
+        }
+
+        .section-eyebrow {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 1.45rem;
+            margin: 0 0 6px;
+        }
+
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 640px;
+        }
+
+        /* Mirrors list */
+        .mirrors-section {
+            background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), rgba(15, 23, 42, 0.96));
+            border-radius: var(--radius-xl);
+            padding: 22px 20px 20px;
+            border: 1px solid rgba(148, 163, 184, 0.4);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .mirrors-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .mirror-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(31, 41, 55, 0.95);
+            padding: 9px 12px;
+        }
+
+        .mirror-label {
+            font-size: 0.78rem;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.96);
+            border: 1px solid rgba(51, 65, 85, 0.95);
+            color: var(--text-muted);
+        }
+
+        .mirror-link-main {
+            flex: 1;
+            min-width: 160px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #bbf7d0;
+            word-break: break-all;
+        }
+
+        .mirror-status {
+            font-size: 0.78rem;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, 0.18);
+            color: #bbf7d0;
+        }
+
+        .mirror-open-btn {
+            font-size: 0.78rem;
+            padding: 6px 11px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, 0.12);
+            border: 1px solid rgba(34, 197, 94, 0.55);
+            color: #bbf7d0;
+            cursor: pointer;
+            transition: background 0.12s ease, border-color 0.12s ease;
+        }
+
+        .mirror-open-btn:hover {
+            background: rgba(34, 197, 94, 0.22);
+            border-color: rgba(74, 222, 128, 0.8);
+        }
+
+        .mirrors-note {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Info grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .info-card {
+            background: rgba(15, 23, 42, 0.95);
+            border-radius: 18px;
+            padding: 15px 14px 14px;
+            border: 1px solid rgba(30, 64, 175, 0.65);
+        }
+
+        .info-card:nth-child(2) {
+            border-color: rgba(34, 197, 94, 0.7);
+        }
+
+        .info-card:nth-child(3) {
+            border-color: rgba(129, 140, 248, 0.7);
+        }
+
+        .info-card-label {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .info-card-title {
+            font-size: 1.02rem;
+            margin-bottom: 6px;
+        }
+
+        .info-card-text {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+        }
+
+        .steps-list {
+            counter-reset: steps-counter;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .step-item {
+            counter-increment: steps-counter;
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 10px;
+            align-items: baseline;
+        }
+
+        .step-index {
+            width: 24px;
+            height: 24px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, 0.18);
+            border: 1px solid rgba(34, 197, 94, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            color: #bbf7d0;
+        }
+
+        .step-content-title {
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .step-content-text {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .steps-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        .steps-aside {
+            border-radius: 18px;
+            padding: 14px 14px 12px;
+            background: radial-gradient(circle at top left, rgba(34, 197, 94, 0.18), rgba(15, 23, 42, 0.98));
+            border: 1px solid rgba(34, 197, 94, 0.6);
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        .steps-aside-title {
+            font-size: 0.94rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #e5e7eb;
+        }
+
+        .steps-aside-list {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .steps-aside-list li {
+            margin-bottom: 3px;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        details.faq-item {
+            border-radius: 16px;
+            padding: 10px 12px;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(51, 65, 85, 0.9);
+            font-size: 0.9rem;
+        }
+
+        details.faq-item[open] {
+            background: rgba(15, 23, 42, 0.98);
+            border-color: rgba(74, 222, 128, 0.7);
+        }
+
+        details.faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        details.faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        .faq-icon {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .faq-body {
+            margin-top: 6px;
+            font-size: 0.86rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(31, 41, 55, 0.95);
+            padding: 16px 20px 18px;
+            background: radial-gradient(circle at bottom, rgba(15, 23, 42, 0.9), #020617);
+        }
+
+        .footer-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer-badge {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 184, 0.6);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-offset: 3px;
+        }
+
+        @media (max-width: 960px) {
+            .hero {
+                grid-template-columns: minmax(0, 1fr);
+                padding-top: 24px;
+            }
+            .hero-visual {
+                order: -1;
+            }
+            .info-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            .steps {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            .faq-list {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            nav {
+                display: none;
+            }
+            .header-cta {
+                display: inline-flex;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .mirrors-section {
+                border-radius: 18px;
+            }
+            .mirror-row {
+                border-radius: 16px;
+            }
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon" aria-hidden="true"></div>
+                <div>
+                    <div class="logo-text-main">Stake Mirror List</div>
+                    <div class="logo-text-sub">Up-to-date working Stake mirrors</div>
+                </div>
+            </div>
+            <nav aria-label="Main navigation">
+                <a href="#mirrors">Mirrors</a>
+                <a href="#how">How it works</a>
+                <a href="#safety">Safety</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="https://shorturl.rest/s/stake" class="btn-primary header-cta" target="_blank" rel="noopener">
+                Go to mirror
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- HERO -->
+            <section class="hero" aria-labelledby="hero-title">
+                <div>
+                    <div class="hero-badge-row">
+                        <div class="hero-badge">
+                            <span class="dot"></span>
+                            <span>Stake mirrors · Updated: November 2025</span>
+                        </div>
+                        <div class="hero-badge">
+                            ⚡ <span>Instant jump via a verified link</span>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-title" id="hero-title">
+                        Working <span class="accent">Stake</span> mirrors without endless searching
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        This page collects up-to-date Stake mirrors and essential tips for safe access.
+                        The link is checked and refreshed so you can reach the platform even when the
+                        main domain is blocked in your region.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://shorturl.rest/s/stake" class="btn-primary" target="_blank" rel="noopener">
+                            Go to the working mirror
+                            <span>↗</span>
+                        </a>
+                        <a href="#mirrors" class="btn-secondary">
+                            View full mirror list
+                        </a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>
+                            <strong>18+</strong> For adults only
+                        </span>
+                        <span>
+                            <strong>Important:</strong> Respect the laws of your country
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-orbit">
+                        <div class="hero-orbit-inner">
+                            <div class="visual-header">
+                                <div class="visual-title">Stake mirror monitoring</div>
+                                <div class="visual-pill">Live-status · Mirrors</div>
+                            </div>
+                            <div class="visual-grid">
+                                <div class="mirror-card-main">
+                                    <div class="mirror-card-main-label">
+                                        <span class="dot"></span>
+                                        Main working Stake mirror
+                                    </div>
+                                    <div class="mirror-card-main-link">
+                                        https://shorturl.rest/s/stake
+                                    </div>
+                                    <div class="mirror-card-main-meta">
+                                        <div class="mirror-card-tag-list">
+                                            <div class="mirror-card-tag">updated: 11.2025</div>
+                                            <div class="mirror-card-tag">status: active</div>
+                                        </div>
+                                        <div>⏱ &lt; 1 s to load</div>
+                                    </div>
+                                </div>
+                                <div class="mirrors-mini">
+                                    <div class="mirror-mini-item">
+                                        <div>Alternative mirror #2</div>
+                                        <span class="mirror-mini-status">pending</span>
+                                    </div>
+                                    <div class="mirror-mini-item">
+                                        <div>Alternative mirror #3</div>
+                                        <span class="mirror-mini-status">coming soon</span>
+                                    </div>
+                                    <div class="mirror-mini-item">
+                                        <div>Mirror health-check</div>
+                                        <span class="mirror-mini-status">monitoring</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visual-footer">
+                                <div class="visual-foot-note">
+                                    <span class="visual-foot-pill">HTTPS · verified domain</span>
+                                </div>
+                                <div>Stake mirror list · 18+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MIRRORS -->
+            <section id="mirrors">
+                <div class="section-header">
+                    <div class="section-eyebrow">Stake mirrors</div>
+                    <h2 class="section-title">Up-to-date list of working Stake mirrors</h2>
+                    <p class="section-subtitle">
+                        Use only verified Stake mirror links. Below you’ll find the main working address
+                        as well as reserved slots for future mirrors. Bookmark this page and return to it
+                        whenever you need access.
+                    </p>
+                </div>
+
+                <div class="mirrors-section">
+                    <div class="mirrors-list">
+                        <div class="mirror-row">
+                            <div class="mirror-label">Main mirror</div>
+                            <a href="https://shorturl.rest/s/stake"
+                               class="mirror-link-main"
+                               target="_blank"
+                               rel="noopener">
+                                https://shorturl.rest/s/stake
+                            </a>
+                            <div class="mirror-status">Status: active</div>
+                            <a href="https://shorturl.rest/s/stake"
+                               class="mirror-open-btn"
+                               target="_blank"
+                               rel="noopener">
+                                Open mirror
+                            </a>
+                        </div>
+
+                        <div class="mirror-row">
+                            <div class="mirror-label">Alternative mirror #2</div>
+                            <div class="mirror-link-main">
+                                Will be added once a new official mirror becomes available.
+                            </div>
+                            <div class="mirror-status">Status: pending</div>
+                        </div>
+
+                        <div class="mirror-row">
+                            <div class="mirror-label">Alternative mirror #3</div>
+                            <div class="mirror-link-main">
+                                Reserved for a future up-to-date Stake domain.
+                            </div>
+                            <div class="mirror-status">Status: coming soon</div>
+                        </div>
+                    </div>
+                    <p class="mirrors-note">
+                        Tip: bookmark this page (Ctrl + D / Cmd + D) to quickly find a working Stake mirror
+                        without digging through chats, messengers, or shady websites.
+                    </p>
+                </div>
+            </section>
+
+            <!-- HOW IT WORKS / INFO -->
+            <section id="how">
+                <div class="section-header">
+                    <div class="section-eyebrow">How it works</div>
+                    <h2 class="section-title">Why Stake gets blocked and why mirrors are needed</h2>
+                    <p class="section-subtitle">
+                        In different countries, access to online platforms can be restricted by law or by local
+                        regulators. Stake mirrors are alternative domains that route you to the same platform
+                        but via a different address.
+                    </p>
+                </div>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <div class="info-card-label">Reasons for blocking</div>
+                        <h3 class="info-card-title">Regional restrictions and filters</h3>
+                        <p class="info-card-text">
+                            Access to the main Stake domain can be limited by providers via IP, DNS, or based on
+                            regulator decisions. As a result, the site doesn’t open even though the service itself
+                            continues to operate normally.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-card-label">Role of mirrors</div>
+                        <h3 class="info-card-title">Alternative domains with the same content</h3>
+                        <p class="info-card-text">
+                            A mirror is an address that leads to the same platform and the same account but uses
+                            a different domain. This helps you get access if the main domain is unavailable in
+                            a certain network or region.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-card-label">SEO & convenience</div>
+                        <h3 class="info-card-title">A single hub for current links</h3>
+                        <p class="info-card-text">
+                            Instead of hunting for working mirrors in chats and forums, it’s easier to have a
+                            single hub page with up-to-date links, explanations, and basic safety recommendations.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SAFETY / STEPS -->
+            <section id="safety">
+                <div class="section-header">
+                    <div class="section-eyebrow">Safe access</div>
+                    <h2 class="section-title">How to use Stake mirrors safely</h2>
+                    <p class="section-subtitle">
+                        It’s important that your access to the platform complies with the laws of your country,
+                        and that any actions you take are conscious and responsible. A few basic steps can help
+                        reduce risks.
+                    </p>
+                </div>
+
+                <div class="steps">
+                    <div>
+                        <div class="steps-list">
+                            <div class="step-item">
+                                <div class="step-index">1</div>
+                                <div>
+                                    <div class="step-content-title">Use only trusted links</div>
+                                    <div class="step-content-text">
+                                        Follow Stake mirrors only from sources you trust. Avoid random links from spam,
+                                        comments, and suspicious email campaigns.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-index">2</div>
+                                <div>
+                                    <div class="step-content-title">Check HTTPS and the domain</div>
+                                    <div class="step-content-text">
+                                        Before entering your login and password, make sure the connection is secure
+                                        (padlock icon in the browser) and the domain doesn’t have extra letters, symbols,
+                                        or strange subdomains.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-index">3</div>
+                                <div>
+                                    <div class="step-content-title">Mind your device and network</div>
+                                    <div class="step-content-text">
+                                        Use an up-to-date browser, security software, and, if needed, a trusted VPN.
+                                        Avoid logging in from shared or insecure devices.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-item">
+                                <div class="step-index">4</div>
+                                <div>
+                                    <div class="step-content-title">Follow local laws and restrictions</div>
+                                    <div class="step-content-text">
+                                        Before using the platform, ensure that access to such services does not conflict
+                                        with the legislation of your country. The responsibility for use lies with you
+                                        as the user.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="steps-note">
+                            Reminder: keep track of the time and amounts you spend on such platforms.
+                            Use them responsibly and set your own limits in advance.
+                        </div>
+                    </div>
+
+                    <aside class="steps-aside">
+                        <div class="steps-aside-title">Quick checklist before entering a Stake mirror:</div>
+                        <ul class="steps-aside-list">
+                            <li>You’re sure the link comes from a trusted source.</li>
+                            <li>The site uses HTTPS and has a valid certificate.</li>
+                            <li>The domain closely matches the official one and has no strange additions.</li>
+                            <li>You are an adult user (18+).</li>
+                            <li>Access to the platform does not violate laws in your jurisdiction.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq">
+                <div class="section-header">
+                    <div class="section-eyebrow">FAQ</div>
+                    <h2 class="section-title">Frequently asked questions about Stake mirrors</h2>
+                    <p class="section-subtitle">
+                        Below are common questions related to Stake mirrors, blocking, and safety.
+                        This section also helps search engines better understand the topic of the page
+                        and build rich snippets.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">What is a working Stake mirror?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            A working Stake mirror is an alternative domain that points to the same platform and
+                            lets you log into your account if the main address is unavailable or blocked in your
+                            network or region.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">Why might Stake not open?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            Most often this is due to regional restrictions, provider-level blocking, or temporary
+                            technical work. In such cases, using an up-to-date Stake mirror or checking access from
+                            another network may help.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">Is a mirror a full replacement for the main site?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            Yes, a Stake mirror normally gives access to the same account, balance, and features as
+                            the main domain. The key is to make sure you’re using an official alternative domain,
+                            not a phishing copy.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">How often are Stake mirrors updated?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            When new official mirrors appear, the information here can be updated. That’s why it makes
+                            sense to come back to this page from time to time and check the current list.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">Do I need a VPN to access a mirror?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            It depends on your country, provider, and local restrictions. In some cases, a mirror
+                            opens without any extra tools; in others, access is only possible via VPN. Whatever
+                            you choose, your actions must comply with local law.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            <span class="faq-question">Is it safe to enter my login and password on a mirror?</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-body">
+                            Only enter your credentials on secure HTTPS pages of official Stake mirrors. Don’t save
+                            your password in the browser on shared computers and never share your details with third
+                            parties.
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-badge">
+                18+ · Responsible use · Respect the laws of your country
+            </div>
+            <div class="footer-links">
+                <span>Stake Mirror List · Not an official Stake website.</span>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
